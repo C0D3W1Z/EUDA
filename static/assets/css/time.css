@@ -1,0 +1,21 @@
+#clock {
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	background-color: lightgrey;
+	margin: auto;
+}
+
+h5#seconds {
+    margin-left: 9px;
+    padding-top: 8px;
+}
+
+input {
+	margin-top: 30px;
+}
+
+div#clock {
+	margin-left: 100px;
+	margin-bottom: 10px;
+}
