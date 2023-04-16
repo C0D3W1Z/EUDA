@@ -1,0 +1,70 @@
+{% extends "base.html" %}
+
+{% block title %}EUDA - Panel{% endblock %}
+
+{% block heading %}Panel{% endblock %}
+
+{% block code %}
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HTML 5 Boilerplate</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <style>
+      .nextbtnpad {
+        padding-bottom: 20px;
+      }
+      .paddingforleft {
+        padding-left:350px
+      }
+    </style>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-9  paddingforleft">
+                <h3 style="text-align: center;" class="mt-5">Check your camera!</h3>
+                <p style="text-align: center;">For optimal assistance from EUDA, please ensure that your face is centered and clearly visible.</p>
+                <div class="nextbtnpad">
+                <center><button onclick="location.href = '/chat';" class="btn btn-primary custom-btn">Next</button></center>
+                </div>
+                <img src="{{ url_for('video_feed') }}" width="100%">
+            </div>
+        </div>
+    </div>
+    <br>
+    <div style="text-align: center;" class="container-fluid container-xl d-flex align-items-center justify-content-between">
+
+      <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
+      <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+      <nav id="navbar" class="navbar" style="text-align: center;">
+        
+      </nav><!-- .navbar -->
+
+    </div>
+    </body>
+
+    <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+    <div id="preloader"></div>
+    
+    <!-- Vendor JS Files -->
+    <script src="{{ url_for('static', filename='assets/vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='assets/vendor/purecounter/purecounter_vanilla.js') }}"></script>
+    <script src="{{ url_for('static', filename='assets/vendor/glightbox/js/glightbox.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='assets/vendor/swiper/swiper-bundle.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='assets/vendor/aos/aos.js') }}"></script>
+    <script src="{{ url_for('static', filename='assets/vendor/php-email-form/validate.js') }}"></script>
+    
+    <!-- Template Main JS File -->
+    <script src="{{ url_for('static', filename='assets/js/main.js') }}"></script>
+    <script></script>
+    
+    </body>
+    
+    </html>
+
+{% endblock %}
+
